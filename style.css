@@ -1,0 +1,530 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 1440px;
+    height: auto;
+}
+@font-face {
+    font-family: "TT Hoves";
+    src: url("./TT\ Hoves\ Pro\ Trial\ Light.ttf");
+  }
+body {
+    font-family: "TT Hoves";
+}
+.header {
+    display: flex;
+    height: 102px;
+    width: 1440px;
+    align-items: center;
+}
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    margin-left: 330px
+}
+.nav li a {
+    text-decoration: none;
+    color: var(--gray-1, #333);
+    font-family: TT Hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+.logo svg {
+    width: 68.552px;
+    height: 41.527px;
+    margin-left: 137px;
+}
+.nav li:first-child {
+    border-bottom: 0.971px solid #333333;
+    border-top: 0.971px solid #333333;
+}
+.section-container {
+    position: relative;
+    display: flex;
+}
+.left-container {
+    width: fit-content;
+    top: 336px;
+    left: 135px;
+    position: absolute;
+}
+.right-container {
+    width: 50%;
+    position: absolute;
+    top: 3px;
+    left: 535px;
+}
+.left-container>p:first-child {
+    color: var(--gray-4, #BDBDBD);
+    font-family: TT Hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    width: 277px;
+}
+.left-container>p:nth-child(2) {
+    color: var(--gray-1, #333);
+    font-family: TT Hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+}
+.arrow-container {
+    display: flex;
+    position: relative;
+    gap: 23px;
+    top: 90px;
+}
+.left-arrow {
+    display: flex;
+    border: 1px solid #F2F2F2;
+    height: 53px;
+    width: 53px;
+    align-items: center;
+    justify-content: center;
+}
+.right-arrow {
+    border: 1px solid #F2F2F2;
+    background: #F9F9F9;
+    height: 53px;
+    width: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-container {
+        display: flex;
+        position: absolute;
+        top: 701px;
+        left: 135px;
+        color: var(--gray-4, #BDBDBD);
+        font-family: TT Hoves;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+}
+.date-container>p:first-child {
+    margin-right: 26px;
+}
+.date-container>p:nth-child(2) {
+    font-size: 43.8px;
+    border : 2px;
+    color: #E0E0E0;
+    transform:  rotate(45deg);
+    margin-right: 32px;
+}
+button.btn {
+    display: flex;
+    width: 222px;
+    background: #FFF;
+    gap: 12px;
+    position: absolute;
+    top: 758px;
+    left: 0.5px;
+    height: 71px;
+    font-size: 12px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+.about-container {
+    width: 1170px;
+    left: 135px;
+    top: 952px;
+    height: 435px;
+    position: absolute;
+    background-color: #FBFBFB;
+}
+.about-container img:first-child {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+.about-container img:nth-child(2) {
+    position: absolute;
+    top: 60px;
+    left: 400px;
+}
+.about-container img:nth-child(3) {
+    position: absolute;
+    top: 325px;
+    left: 100px;
+}
+.about-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    row-gap: 20px;
+    top: 30px;
+    right: 70px;
+}
+.about-right p:first-child {
+    color: var(--gray-4, #BDBDBD);
+    font-family: TT Hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+}
+.about-right p:nth-child(2) {
+    color: #000;
+    font-family: TT Hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    display: flex;
+    width: 400px;
+    height: 200px;
+}
+.about-right button {
+    width: 222px;
+    height: 71px;
+    background-color: #fff;
+    border: none;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-tasks {
+    width: 1170px;
+    top: 1537px;
+    position: absolute;
+    height: 268px;
+    left: 135px;
+}
+.main-tasks p:first-child {
+    color: var(--gray-4, #BDBDBD);
+    font-family: TT Hoves;
+    font-size: 64px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    top: 0;
+    left: 0;
+}
+.main-tasks p:nth-child(2) {
+    color: var(--gray-6, #F2F2F2);
+    font-family: SF Pro Display;
+    font-size: 200px;
+    font-style: normal;
+    position: absolute;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    width: 104px;
+    height: 140px;
+    bottom: 2px;
+    flex-direction: column;
+    left: 0;
+    justify-content: center;
+}
+.main-tasks p:nth-child(3) {
+    display: flex;
+    width: 279px;
+    position: absolute;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--gray-1, #333);
+    font-family: TT Hoves;
+    left: 134px;
+    font-size: 22px;
+    top: 124px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+.main-tasks p:nth-child(4) {
+    color: var(--gray-6, #F2F2F2);
+    font-family: SF Pro Display;
+    font-size: 200px;
+    font-style: normal;
+    position: absolute;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    width: 104px;
+    height: 140px;
+    bottom: 2px;
+    flex-direction: column;
+    left: 600px;
+    justify-content: center;
+}
+.main-tasks p:nth-child(5) {
+    display: flex;
+    width: 420px;
+    position: absolute;
+    flex-direction: column;
+    left: 750px;
+    color: var(--gray-1, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    top: 124px;
+}
+.our-projects {
+    width: 1170px;
+    height: 765px;
+    position: absolute;
+    top: 1925px;
+    left: 135px;
+}
+.our-projects h2 {
+    color: var(--gray-4, #BDBDBD);
+    font-size: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+}
+.our-projects img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 124px;
+}
+.our-projects img:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 124px;
+}
+.our-projects img:nth-child(4) {
+    position: absolute;
+    left: 0;
+    bottom: 101px;
+}
+.our-projects img:nth-child(5) {
+    position: absolute;
+    left: 300px;
+    bottom: 101px;
+}
+.our-projects img:nth-child(6) {
+    position: absolute;
+    right: 0;
+    bottom: 101px;
+}
+.our-projects>button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    width: 222px;
+    background-color: var(--gray-1, #333);
+    height: 71px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+.contact {
+    width: 1170px;
+    left: 135px;
+    position: absolute;
+    top: 2810px;
+    height: 603px;
+}
+.contact input {
+    padding-top: 15px;
+    display: flex;
+    width: 391px;
+    padding-bottom: 14px;
+    height: 46px;
+    border: none;
+    background-color: #F3F3F3;
+    padding-left: 21px;
+    margin-bottom: 10px;
+}
+/* input.asterisk {
+    position: relative;
+  }
+input.asterisk::after {
+    content: "*";
+    color: red;
+    margin-left: 3px;
+  } */
+.contact .title-form {
+    color: var(--gray-4, #BDBDBD);
+    font-family: TT Hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 22px;
+    line-height: 64px;
+}
+.contact input:nth-child(5) {
+    width: 391px;
+    padding-bottom: 116px;
+    height: 147px;
+}
+.contact .contact-img {
+    position: absolute;
+    top: 86px;
+    width: 749px;
+    height: 369px;
+    left: 421px;
+}
+.contact .svg-form {
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+}
+.policy {
+    color: #333;
+    bottom: 92px;
+    left: 40px;
+    position: absolute;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px; 
+    width: 331px;
+    height: 34px;
+}
+button.form {
+    display: flex;
+    color: #FFF;
+    gap: 15px;
+    font-family: TT Hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    background: var(--gray-1, #333);
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    width: 222px;
+    height: 71px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+        width: 1440px;
+        height: 417px;
+        background: #2C2C2C;
+        position: absolute;
+        top: 3533px;
+        left: 0;
+}
+.footer img {
+    position: absolute;
+    left: 116px;
+    top: 58px;
+}
+.infor p {
+    color: #FFF;
+    font-family: TT Hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: normal;
+}
+.infor a {
+    text-decoration: none;
+    display: flex;
+    color: #FFF;
+    font-family: TT Hoves;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-bottom: 16px;
+}
+.infor {
+    position: absolute;
+    top: 58px;
+    left: 360px;
+}
+.contact-footer {
+    top: 58px;
+    color: #FFF;
+    font-family: TT Hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 620px;
+    position: absolute;
+}
+.contact-footer p {
+    margin-bottom: 32px;
+    
+}
+.contact-footer p:first-child {
+    margin-bottom: 25px;
+}
+.contact-footer p:nth-child(2) {
+    display: flex;
+    width: 314px;
+    gap: 19px;
+    height: 72px;
+    flex-direction: row;
+}
+.contact-footer svg {
+    width: 16px;
+    height: 16px;
+}
+.social-icon {
+    position: absolute;
+    right: 212px;
+    top: 58px;
+    color: #FFF;
+    font-family: TT Hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.social-icon p {
+    margin-bottom: 24px;
+}
+.social-icon svg {
+    margin-right: 40px;
+}
+.footer .copyright {
+    position: absolute;
+    color: rgba(200, 200, 200, 0.50);
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    bottom: 24px;
+    left: 591px;
+    right: 591px;
+}
+hr.line-footer {
+    stroke-width: 1px;
+    stroke: #FFF;
+    opacity: 0.10000000149011612;
+    position: absolute;
+    width: 1440px;
+    height: 0px;
+    bottom: 70px;
+}
