@@ -3,16 +3,17 @@
     margin: 0;
     padding: 0;
 }
-html {
-    width: 1440px;
-    height: auto;
-}
 @font-face {
     font-family: "TT Hoves";
     src: url("./TT\ Hoves\ Pro\ Trial\ Light.ttf");
   }
 body {
     font-family: "TT Hoves";
+}
+main {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 .header {
     display: flex;
@@ -42,7 +43,7 @@ body {
     height: 41.527px;
     margin-left: 137px;
 }
-.nav li:first-child {
+.nav li>a:hover {
     border-bottom: 0.971px solid #333333;
     border-top: 0.971px solid #333333;
 }
@@ -85,6 +86,60 @@ body {
     gap: 23px;
     top: 90px;
 }
+.active:hover {
+    background: #F9F9F9;
+    cursor: pointer;
+    color:black;
+    font-weight: 700;
+}
+.container:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+  }
+.container {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    width: 570px;
+}
+img.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+img.image1 {
+    width: 570px;
+    height: 255px;
+}
+.overlay .text>p {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    right: 0;
+    background-color: #333333;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.text {
+    color: white;
+    width: 570px;
+    font-size: 64px;
+    padding: 48px 79px;
+    /* height: 255px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+}
 .left-arrow {
     display: flex;
     border: 1px solid #F2F2F2;
@@ -95,7 +150,6 @@ body {
 }
 .right-arrow {
     border: 1px solid #F2F2F2;
-    background: #F9F9F9;
     height: 53px;
     width: 53px;
     display: flex;
@@ -143,7 +197,7 @@ button.btn {
     left: 135px;
     top: 952px;
     height: 435px;
-    position: absolute;
+    position: relative;
     background-color: #FBFBFB;
 }
 .about-container img:first-child {
@@ -283,6 +337,10 @@ button.btn {
     top: 1925px;
     left: 135px;
 }
+.active1:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
 .our-projects h2 {
     color: var(--gray-4, #BDBDBD);
     font-size: 64px;
@@ -293,7 +351,16 @@ button.btn {
     font-weight: 300;
     line-height: 64px;
 }
-.overlay {
+.slideshow-container {
+    overflow:hidden;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.slideshow-container:hover {
+    overflow-x: auto;
+}
+/* .overlay {
     position: absolute;
     padding: 48px 79px;
     left: 0;
@@ -302,7 +369,7 @@ button.btn {
     background: var(--gray-1, #333);
     width: 570px;
     height: 255px;
-}
+} */
 .overlay p:first-child {
     color: #FFF;
     padding-bottom: 8px;
@@ -322,7 +389,7 @@ button.btn {
     letter-spacing: 2.4px;
     text-transform: uppercase;
 }
-.our-projects img:nth-child(2) {
+/* .our-projects img:nth-child(2) {
     position: absolute;
     left: 0;
     top: 124px;
@@ -346,10 +413,10 @@ button.btn {
     position: absolute;
     right: 0;
     bottom: 101px;
-}
+} */
 .our-projects>button {
     position: absolute;
-    bottom: 0;
+    bottom: 120px;
     right: 0;
     color: #FFF;
     font-size: 12px;
@@ -415,8 +482,17 @@ input.asterisk::after {
 }
 .contact .svg-form {
     position: absolute;
+    width: 24px;
+    height: 24px;
     left: 0;
-    bottom: 200px;
+    bottom: 100px;
+}
+.contact .svg-form1 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    bottom: 90px;
 }
 .policy {
     color: #333;
@@ -452,7 +528,7 @@ button.form {
     justify-content: center;
 }
 .footer {
-        width: 1440px;
+        width: 100%;
         height: 417px;
         background: #2C2C2C;
         position: absolute;
@@ -502,8 +578,9 @@ button.form {
     position: absolute;
 }
 .contact-footer p {
-    margin-bottom: 32px;
-    
+        display: flex;
+        margin-bottom: 32px;
+        gap: 19px;
 }
 .contact-footer p:first-child {
     margin-bottom: 25px;
@@ -536,6 +613,9 @@ button.form {
 .social-icon svg {
     margin-right: 40px;
 }
+.social-icon svg:hover {
+    cursor: pointer;
+}
 .footer .copyright {
     position: absolute;
     color: rgba(200, 200, 200, 0.50);
@@ -547,6 +627,7 @@ button.form {
     bottom: 24px;
     left: 591px;
     right: 591px;
+    width: 258px;
 }
 hr.line-footer {
     stroke-width: 1px;
